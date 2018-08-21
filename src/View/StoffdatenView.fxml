@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.StoffdatenView">
+    <children>
+        <TableView fx:id="tbl_data" layoutX="21.0" layoutY="14.0" prefHeight="750.0" prefWidth="826.0">
+            <columns>
+                <TableColumn fx:id="col_name" editable="false" prefWidth="75.0" text="Stoffname" />
+                <TableColumn fx:id="col_hersteller" editable="false" prefWidth="75.0" text="Hersteller" />
+                <TableColumn fx:id="col_aggregat" prefWidth="75.0" text="Aggregatszustand" />
+                <TableColumn fx:id="col_maxLager" editable="false" prefWidth="75.0" text="Max. Lagermenge in Gramm" />
+                <TableColumn fx:id="col_arbeitsplatz" editable="false" prefWidth="75.0" text="Arbeitsplatzgrenze in Gramm" />
+                <TableColumn fx:id="col_datum" editable="false" prefWidth="75.0" text="Datum" />
+                <TableColumn fx:id="col_verwendung" editable="false" prefWidth="75.0" text="Verwendung" />
+                <TableColumn fx:id="col_stoffanmerkung" editable="false" prefWidth="75.0" text="Stoffanmerkung" />
+                <TableColumn fx:id="col_lagerbestand" editable="false" prefWidth="75.0" text="Lagerbestand in Gramm" />
+                <TableColumn fx:id="col_lageranmerkung" editable="false" prefWidth="75.0" text="Lageranmerkung" />
+                <TableColumn fx:id="col_betriebsanweisung" editable="false" prefWidth="75.0" text="Betriebsanweisung" />
+            </columns>
+        </TableView>
+        <Button fx:id="btn_VerbotShow" layoutX="878.0" layoutY="356.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Verbotsdaten anzeigen">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn_StoffAdd" layoutX="878.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Neuer Stoff einfügen">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn_LagerEdit" layoutX="878.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Lagerdaten bearbeiten">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn_StoffEdit" layoutX="878.0" layoutY="46.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Stoff bearbeiten">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+        <Button fx:id="btn_StoffRemove" layoutX="878.0" layoutY="78.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="Stoff entfernen">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
